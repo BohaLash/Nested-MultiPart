@@ -10,7 +10,7 @@ REST_FRAMEWORK = {
     # ...,
     'DEFAULT_PARSER_CLASSES': [
         # ...,
-        'project.parsers.NestedMultiPartParser',
+        'common.parsers.NestedMultiPartParser',
     ],
 }
 ```
