@@ -3,13 +3,22 @@
 
 
 ### Use in DRF project:
-  Edit `settings.py`:
+  1. Add code from `parsers.py` to your project.
+  2. Edit `settings.py`:
   ```py
 REST_FRAMEWORK = {
     # ...,
     'DEFAULT_PARSER_CLASSES': [
         # ...,
-        'crm.parsers.NestedMultiPartParser',
+        'project.parsers.NestedMultiPartParser',
     ],
 }
-  ```
+```
+
+### Use in TS project:
+  1. Add code from `serializers.ts` to your project.
+  2. Use like this:
+```ts
+import { buildNestedFormDataWithFiles } from '@/utils/serializers'
+const payload = buildNestedFormDataWithFiles(object)
+```
