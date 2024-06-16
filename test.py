@@ -1,16 +1,6 @@
-import os
-import io
 import json
-from random import uniform, choice
-from re import template
-from webbrowser import get
 
-import pytest
-from ddf import G, N, F, M, C, teach
-
-from rest_framework.parsers import DataAndFiles, MultiPartParser
-
-from django.contrib.contenttypes.models import ContentType
+from rest_framework.parsers import DataAndFiles
 
 from common.parsers import NestedMultiPartParser
 
